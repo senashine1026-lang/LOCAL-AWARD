@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>local-award</title>
+    <title>LOCAL AWARD | 中学生・高校生のための地域課題解決アワード</title>
+    <link rel="icon" href="img/favicon.webp"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header-logo">LOCAL AWARD</div>
+      <nav class="header-nav">
+        <a href="#recruit">募集要項</a>
+        <a href="#works">過去受賞作品</a>
+        <a href="#entry" class="header-button">応募する</a>
+      </nav>
+    </header>
     <section class="first-view">
       <div class="scroll-infinity">
         <div class="scroll-infinity_wrap">
@@ -74,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section class="recruit">
+    <section class="recruit" id="recruit">
       <div class="recruit-category">
         <h2>募集部門</h2>
         <div class="category-list">
@@ -117,7 +126,7 @@
         </dl>
       </div>
     </section>
-    <section class="works">
+    <section class="works" id="works">
       <h2>過去受賞作品</h2>
       <div class="filter-buttons">
         <button data-filter="*">すべて</button>
@@ -199,5 +208,11 @@
         });
       });
     </script>
+    <footer class="footer">
+      <h2>LOCAL AWARD</h2>
+      <p>ローカルアワード運営事務局 / info@local-award.example</p>
+      <p>Photos by Rochelle Lee、note thanun、Stephanie Hau、Maccy、Jason Ortego、Yanhao Fang on Unsplash</p>
+      <p>&copy;2026 Local Award</p>
+    </footer>
   </body>
 </html>
