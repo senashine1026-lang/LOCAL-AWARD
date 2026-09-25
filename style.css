@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
+
 .first-view {
   position: relative;
   min-height: 100vh;
@@ -87,7 +91,8 @@
 }
 
 .recruit-category {
-  padding: 45px 0 95px;
+  padding: 45px 2.5vw 95px;
+  border-top: 1px solid #ff321f;
 }
 
 .recruit-category h2 {
@@ -98,7 +103,7 @@
 .category-list {
   display: flex;
   gap: 2.5vw;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .category-item {
@@ -125,5 +130,38 @@
   margin: 0;
   color: #c8c5c5;
   font-size: 14.5px;
-  line-height: 1.8;
+  line-height: 1;
+}
+
+.recruit-detail {
+  padding: 20px 2.5vw 95px;
+  border-top: 1px solid #555;
+}
+
+.recruit-detail h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.recruit-table {
+  margin: -15px 0 0;
+}
+
+.recruit-row {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #555;
+}
+
+.recruit-row dt {
+  width: 18%;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.recruit-row dd {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
 }
