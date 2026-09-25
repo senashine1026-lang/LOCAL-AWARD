@@ -97,7 +97,6 @@
       </div>
       <div class="recruit-detail">
         <h2>募集要項</h2>
-        　
         <dl class="recruit-table">
           <div class="recruit-row">
             <dt>応募期間</dt>
@@ -115,9 +114,90 @@
             <dt>審査発表</dt>
             <dd>2026年12月20日</dd>
           </div>
-          　
         </dl>
       </div>
     </section>
+    <section class="works">
+      <h2>過去受賞作品</h2>
+      <div class="filter-buttons">
+        <button data-filter="*">すべて</button>
+        <button data-filter=".appeal">魅力発信</button>
+        <button data-filter=".safety">防災安全</button>
+        <button data-filter=".environment">環境</button>
+      </div>
+      <div class="work-list">
+        <div class="work-item appeal">
+          <img src="img/thumbnail-05.webp" alt="" />
+          <h3>魅力発信</h3>
+          <h4>地元の祭りを紹介する2分間のショート映像</h4>
+          <p>中学1年・東美咲</p>
+        </div>
+        <div class="work-item appeal">
+          <img src="img/thumbnail-06.webp" alt="" />
+          <h3>魅力発信</h3>
+          <h4>駅前観光マップのリデザイン</h4>
+          <p>中学2年・林さくら</p>
+        </div>
+        <div class="work-item appeal">
+          <img src="img/thumbnail-07.webp" alt="" />
+          <h3>魅力発信</h3>
+          <h4>シャッター商店街を案内図に変えるポスター</h4>
+          <p>高校2年・佐野陽菜</p>
+        </div>
+        <div class="work-item safety">
+          <img src="img/thumbnail-08.webp" alt="" />
+          <h3>防災安全</h3>
+          <h4>通学路の危険箇所をまとめた防災マップ</h4>
+          <p>高校3年・岩本直樹</p>
+        </div>
+        <div class="work-item safety">
+          <img src="img/thumbnail-09.webp" alt="" />
+          <h3>防災安全</h3>
+          <h4>避難所の場所が遠くからわかる誘導看板</h4>
+          <p>高校1年・森田悠人</p>
+        </div>
+        <div class="work-item safety">
+          <img src="img/thumbnail-10.webp" alt="" />
+          <h3>防災安全</h3>
+          <h4>高齢者に配る緊急連絡カードのデザイン</h4>
+          <p>高校3年・川口千夏</p>
+        </div>
+        <div class="work-item environment">
+          <img src="img/thumbnail-04.webp" alt="" />
+          <h3>環境</h3>
+          <h4>給食の食べ残しを減らす啓発ポスター</h4>
+          <p>高校2年・宮下蓮</p>
+        </div>
+        <div class="work-item environment">
+          <img src="img/thumbnail-01.webp" alt="" />
+          <h3>環境</h3>
+          <h4>海岸のゴミ拾いを1年間記録した映像</h4>
+          <p>中学3年・大村優</p>
+        </div>
+        <div class="work-item environment">
+          <img src="img/thumbnail-02.webp" alt="" />
+          <h3>環境</h3>
+          <h4>分別方法をすぐ調べられるWebサイト</h4>
+          <p>中学2年・藤井湊</p>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      const iso = new Isotope(".work-list", {
+        itemSelector: ".work-item",
+        layoutMode: "fitRows",
+      });
+      const filterButtons = document.querySelectorAll(".filter-buttons button");
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filterValue = button.dataset.filter;
+
+          iso.arrange({
+            filter: filterValue,
+          });
+        });
+      });
+    </script>
   </body>
 </html>
