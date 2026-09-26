@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOCAL AWARD | 中学生・高校生のための地域課題解決アワード</title>
-    <link rel="icon" href="img/favicon.webp"/>
+    <link rel="icon" href="img/favicon.webp" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -193,25 +193,42 @@
     </section>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script>
-      const iso = new Isotope(".work-list", {
-        itemSelector: ".work-item",
-        layoutMode: "fitRows",
-      });
+      const workItems = document.querySelectorAll(".work-item");
       const filterButtons = document.querySelectorAll(".filter-buttons button");
       filterButtons.forEach((button) => {
         button.addEventListener("click", () => {
           const filterValue = button.dataset.filter;
 
-          iso.arrange({
-            filter: filterValue,
+          filterButtons.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+          button.classList.add("active");
+          workItems.forEach((item) => {
+            if (filterValue === "*" || item.matches(filterValue)) {
+              item.style.display = "block";
+              item.style.opacity = "1";
+              item.style.transform = "scale(1)";
+            } else {
+              item.style.opacity = "0";
+              item.style.transform = "scale(0.95)";
+
+              setTimeout(() => {
+                item.style.display = "none";
+              }, 250);
+            }
           });
         });
       });
     </script>
+
     <footer class="footer">
       <h2>LOCAL AWARD</h2>
       <p>ローカルアワード運営事務局 / info@local-award.example</p>
-      <p>Photos by Rochelle Lee、note thanun、Stephanie Hau、Maccy、Jason Ortego、Yanhao Fang on Unsplash</p>
+      <p>
+        Photos by Rochelle Lee、note thanun、Stephanie Hau、Maccy、Jason
+        Ortego、Yanhao Fang on Unsplash
+      </p>
       <p>&copy;2026 Local Award</p>
     </footer>
   </body>
