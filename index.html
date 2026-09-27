@@ -20,18 +20,23 @@
   <body>
     <header class="header">
       <div class="header-logo">LOCAL AWARD</div>
-      <nav class="header-nav">
+      <nav class="header-right">
         <a href="#recruit">募集要項</a>
         <a href="#works">過去受賞作品</a>
-        <a href="#entry" class="header-button">応募する</a>
       </nav>
+      <a href="#entry" class="header-button">応募する</a>
       <button class="menu-button">
         <img class="menu-icon" src="img/menu.svg" />
-        <img class="close-icon" src="img/close.svg" />
-        <span>募集要項</span>
-        <span>過去受賞作品</span>
-        <span class="menu-text">MENU</span>
       </button>
+      <div class="menu-overlay">
+        <button class="close-button">
+          <img class="close-icon" src="img/close.svg" />
+        </button>
+        <nav class="menu-nav">
+          <a href="#recruit">募集要項</a>
+          <a href="#works">過去受賞作品</a>
+        </nav>
+      </div>
     </header>
     <section class="first-view">
       <div class="scroll-infinity">
@@ -235,6 +240,22 @@
               }, 250);
             }
           });
+        });
+      });
+      const menuButton = document.querySelector(".menu-button");
+      const menuOverlay = document.querySelector(".menu-overlay");
+      const closeButton = document.querySelector(".close-button");
+
+      menuButton.addEventListener("click", () => {
+        menuOverlay.style.display = "block";
+      });
+      closeButton.addEventListener("click", () => {
+        menuOverlay.style.display = "none";
+      });
+      const menuLinks = document.querySelectorAll(".menu-nav a");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menuOverlay.style.display = "none";
         });
       });
     </script>
