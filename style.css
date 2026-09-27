@@ -121,7 +121,7 @@ html {
   .header-button {
     font-size: 12px;
     padding: 10px 12px;
-    transform: translateX(180px);
+    transform: translateX(70px);
   }
   .menu-button {
     display: block;
@@ -248,7 +248,7 @@ html {
     height: 160px;
   }
   .scroll-down {
-    right: -35vw;
+    right: -15vw;
     bottom: 1vh;
   }
   .scroll-down img {
@@ -262,7 +262,6 @@ html {
 
 .recruit-category {
   padding: 90px 2.5vw 60px;
-  border-top: 1px solid #555;
 }
 
 .recruit-category h2 {
@@ -431,6 +430,7 @@ html {
 .filter-buttons button {
   padding: 10px 20px;
   border: 1px solid #1e1c1c;
+  color: #1e1c1c;
   background-color: #fff;
   cursor: pointer;
   border-radius: 23px;
@@ -449,10 +449,7 @@ html {
 }
 
 .work-item {
-  margin-bottom: 23px;
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
+  margin: 0;
 }
 .work-item:first-child {
   grid-column: span 2;
