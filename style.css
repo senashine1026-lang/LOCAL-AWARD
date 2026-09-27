@@ -483,9 +483,7 @@ html {
 }
 @media screen and (max-width: 768px) {
   .work-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 30px;
+    display: block;
     margin-top: 40px;
   }
 
@@ -502,14 +500,17 @@ html {
     margin: 0;
     font-size: 11px;
   }
+  .work-item,
   .work-item:first-child {
-    grid-column: auto;
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 35px;
   }
   .work-item img,
   .work-item:first-child img {
     width: 100%;
-    height: auto;
+    height: 180px;
     object-fit: cover;
+    display: block;
   }
 }
 
