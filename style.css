@@ -34,6 +34,7 @@ html {
 
 .header-nav {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
@@ -41,18 +42,19 @@ html {
   color: #1e1c1c;
   text-decoration: none;
   font-size: 14px;
+  line-height: 1;
 }
 
 .header-button {
-  background-color: #ff321f;
+  background-color: #ec3013;
   color: #fff !important;
   text-decoration: none;
 
   font-weight: 700;
+  font-size: 14px;
+  padding: 14px 24px;
   border-radius: 15px;
-  font-size: 18px;
-  padding: 14px 38px;
-  border-radius: 30px;
+  line-height: 1;
 }
 
 .menu-button {
