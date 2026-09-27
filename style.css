@@ -108,8 +108,7 @@ html {
 @media screen and (max-width: 768px) {
   .header {
     height: 65px;
-    display: flex;
-    justify-content: space-between;
+    padding: 0 20px;
   }
   .header-logo {
     font-size: 14px;
@@ -121,7 +120,9 @@ html {
   .header-button {
     font-size: 12px;
     padding: 10px 12px;
-    transform: translateX(70px);
+    margin-left: auto;
+    margin-right: 20px;
+    transform: none;
   }
   .menu-button {
     display: block;
