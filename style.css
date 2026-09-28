@@ -363,7 +363,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .recruit-category {
-    padding: 80px 20px 35px;
+    padding: 80px 20px 30px;
   }
   .recruit-category h2 {
     font-size: 22px;
@@ -395,7 +395,7 @@ html {
     line-height: 1.3;
   }
   .recruit-detail {
-    padding: 30px 20px 70px;
+    padding: 30px 20px 23px;
   }
   .recruit-detail h2 {
     font-size: 22px;
