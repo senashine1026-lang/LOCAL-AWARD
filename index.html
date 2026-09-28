@@ -218,7 +218,14 @@
       const workList = document.querySelector(".work-list");
       const iso = new Isotope(workList, {
         itemSelector: ".work-item",
-        layoutMode: "fitRows",
+        layoutMode: window.innerWidth <= 768 ? "masonry" : "fitRows",
+        fitRows: {
+          gutter: 32,
+        },
+        masonry: {
+          gutter: 25,
+          horizontalOrder: true,
+        },
       });
       const filterButtons = document.querySelectorAll(".filter-buttons button");
       filterButtons.forEach((button) => {
