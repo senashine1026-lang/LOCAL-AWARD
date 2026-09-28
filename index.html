@@ -245,15 +245,15 @@
       const closeButton = document.querySelector(".close-button");
 
       menuButton.addEventListener("click", () => {
-        menuOverlay.style.display = "block";
+        menuOverlay.classList.add("is-open");
       });
       closeButton.addEventListener("click", () => {
-        menuOverlay.style.display = "none";
+        menuOverlay.classList.remove("is-open");
       });
       const menuLinks = document.querySelectorAll(".menu-nav a");
       menuLinks.forEach((link) => {
         link.addEventListener("click", () => {
-          menuOverlay.style.display = "none";
+          menuOverlay.classList.remove("is-open");
         });
       });
     </script>
