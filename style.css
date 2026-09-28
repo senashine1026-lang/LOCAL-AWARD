@@ -8,6 +8,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 85px;
 }
 
 .header {
@@ -106,6 +107,9 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 65px;
+  }
   .header {
     height: 65px;
     padding: 0 20px;
@@ -418,8 +422,17 @@ html {
 }
 
 .works h2 {
+  position: relative;
   margin: 0;
   font-size: 25px;
+}
+.works h2::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #d3d3d3;
 }
 
 .filter-buttons {
@@ -430,7 +443,7 @@ html {
 
 .filter-buttons button {
   padding: 10px 20px;
-  border: 1px solid #1e1c1c;
+  border: 1px solid #d3d3d3;
   color: #1e1c1c;
   background-color: #fff;
   cursor: pointer;
