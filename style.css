@@ -172,10 +172,6 @@ html {
   gap: 40px;
 }
 
-.first-view_text {
-  padding: 0 0;
-}
-
 .first-view_text p {
   font-size: 14px;
   margin-bottom: 15px;
@@ -196,8 +192,7 @@ html {
     justify-content: flex-start;
     gap: 40px;
   }
-  .first-view-bottom {
-    padding: 0 15px;
+  .first-view_bottom {
     gap: 20px;
   }
   .first-view_text {
@@ -225,7 +220,6 @@ html {
 .scroll-infinity {
   padding: 20px 0 0;
   width: 100%;
-  height: auto;
   overflow: hidden;
 }
 
@@ -249,7 +243,6 @@ html {
   width: auto;
   height: 260px;
   flex-shrink: 0;
-  position: relative;
 }
 
 .scroll-infinity_item img {
@@ -283,10 +276,6 @@ html {
   }
   .scroll-infinity_item img {
     height: 160px;
-  }
-  .scroll-down {
-    top: 415px;
-    right: 15px;
   }
   .scroll-down img {
     height: 100px;
