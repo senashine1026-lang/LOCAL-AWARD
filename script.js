@@ -1,7 +1,7 @@
 const workList = document.querySelector(".work-list");
 const iso = new Isotope(workList, {
   itemSelector: ".work-item",
-  layoutMode: window.innerWidth <= 768 ? "masonry" : "fitRows",
+  layoutMode: window.innerWidth <= 769 ? "masonry" : "fitRows",
   fitRows: {
     gutter: 32,
   },

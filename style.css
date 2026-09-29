@@ -502,12 +502,9 @@ html {
 
 .work-item img {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 8 / 5;
   object-fit: cover;
   display: block;
-}
-.work-item:first-child img {
-  height: 540px;
 }
 .work-item h3 {
   margin: 15px 0 8px;
@@ -526,7 +523,7 @@ html {
   font-size: 14px;
   color: #1e1c1c;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .works {
     padding: 80px 15px 45px;
   }
@@ -557,12 +554,11 @@ html {
   .work-item img,
   .work-item:first-child img {
     width: 100%;
-    height: 120px;
+    aspect-ratio: 8 / 5;
     object-fit: cover;
     display: block;
   }
 }
-
 .footer {
   padding: 28px 0 12px;
   background-color: #1e1c1c;
