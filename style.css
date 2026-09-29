@@ -145,6 +145,7 @@ html {
   }
 }
 .first-view {
+  position: relative;
   min-height: 100vh;
   padding-top: 85px;
   display: flex;
@@ -263,8 +264,8 @@ html {
     height: 160px;
   }
   .scroll-down {
-    right: 15px;
     top: 415px;
+    right: 15px;
   }
   .scroll-down img {
     height: 100px;
