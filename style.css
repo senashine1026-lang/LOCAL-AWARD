@@ -523,7 +523,7 @@ html {
   font-size: 14px;
   color: #1e1c1c;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .works {
     padding: 80px 15px 45px;
   }
@@ -546,7 +546,7 @@ html {
   }
   .work-item,
   .work-item:first-child {
-    width: calc((100% - 25px) / 2);
+    width: calc((100% - 32px) / 2);
     margin-bottom: 35px;
   }
 }

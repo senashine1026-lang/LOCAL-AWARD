@@ -1,14 +1,11 @@
 const workList = document.querySelector(".work-list");
 const iso = new Isotope(workList, {
   itemSelector: ".work-item",
-  layoutMode: window.innerWidth <= 769 ? "masonry" : "fitRows",
+  layoutMode: "fitRows",
   fitRows: {
     gutter: 32,
   },
-  masonry: {
-    gutter: 25,
-    horizontalOrder: true,
-  },
+ 
 });
 const filterButtons = document.querySelectorAll(".filter-buttons button");
 filterButtons.forEach((button) => {
