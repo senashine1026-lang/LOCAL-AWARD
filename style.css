@@ -144,7 +144,6 @@ html {
     padding: 10px 12px;
     margin-left: auto;
     margin-right: 20px;
-    transform: none;
   }
   .menu-button {
     display: block;
@@ -400,7 +399,6 @@ html {
   .category-number {
     margin-bottom: 5px;
     font-size: 17px;
-    font-weight: 700;
   }
 
   .category-item {
@@ -570,7 +568,6 @@ html {
 .footer p:last-child {
   margin-top: 10px;
   padding-top: 10px;
-  color: #c8c5c5;
   font-size: 13px;
 }
 @media screen and (max-width: 768px) {
