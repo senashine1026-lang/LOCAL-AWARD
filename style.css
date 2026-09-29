@@ -266,7 +266,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .scroll-infinity {
-    padding: 120px 15px 0;
+    padding: 15px 15px 0;
   }
   .scroll-infinity_wrap {
     gap: 18px;
