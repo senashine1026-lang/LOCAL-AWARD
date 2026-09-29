@@ -145,15 +145,16 @@ html {
   }
 }
 .first-view {
-  position: relative;
   min-height: 100vh;
   padding-top: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .first-view_text {
-  position: absolute;
-  left: 2vw;
-  bottom: 2vw;
+  padding: 0 2vw 2vw;
 }
 
 .first-view_text p {
@@ -172,11 +173,11 @@ html {
   .first-view {
     min-height: 690px;
     padding-top: 85px;
+    justify-content: flex-start;
+    gap: 40px;
   }
   .first-view_text {
-    left: 15px;
-    top: 400px;
-    bottom: auto;
+    padding: 0 15px;
   }
   .first-view_text p {
     font-size: 12px;
