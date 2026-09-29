@@ -26,9 +26,7 @@ html {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #fff;
-  color: #fff;
   z-index: 100;
   border-bottom: 1px solid #c8c5c5;
 }
@@ -156,7 +154,6 @@ html {
   }
 }
 .first-view {
-  position: relative;
   height: 100vh;
   padding-top: 85px;
   display: flex;
@@ -227,7 +224,6 @@ html {
 
 .scroll-infinity {
   padding: 20px 0 0;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -248,7 +244,6 @@ html {
 }
 
 .scroll-infinity_item {
-  width: auto;
   height: 260px;
   flex-shrink: 0;
 }
@@ -403,9 +398,7 @@ html {
     margin-top: 25px;
   }
   .category-number {
-    display: block;
     margin-bottom: 5px;
-    color: #ff321f;
     font-size: 17px;
     font-weight: 700;
   }
@@ -496,7 +489,6 @@ html {
 }
 .work-list {
   margin-top: 50px;
-  display: block;
   position: relative;
 }
 
@@ -536,7 +528,6 @@ html {
     padding: 80px 15px 45px;
   }
   .work-list {
-    display: block;
     margin-top: 45px;
   }
 
@@ -557,14 +548,6 @@ html {
   .work-item:first-child {
     width: calc((100% - 25px) / 2);
     margin-bottom: 35px;
-  }
-
-  .work-item img,
-  .work-item:first-child img {
-    width: 100%;
-    aspect-ratio: 8 / 5;
-    object-fit: cover;
-    display: block;
   }
 }
 .footer {
