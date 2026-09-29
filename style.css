@@ -158,15 +158,22 @@ html {
 .first-view {
   position: relative;
   min-height: 100vh;
-  padding-top: calc(85px + 37vh);
+  padding-top: 85px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 120px;
+  gap: 100px;
+}
+
+.first-view_bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .first-view_text {
-  padding: 0 0 2vw;
+  padding: 0 0;
 }
 
 .first-view_text p {
@@ -189,6 +196,10 @@ html {
     justify-content: flex-start;
     gap: 40px;
   }
+  .first-view-bottom {
+    padding: 0 15px;
+    gap: 20px;
+  }
   .first-view_text {
     padding: 0 15px;
   }
@@ -203,9 +214,7 @@ html {
 }
 
 .scroll-down {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+  flex-shrink: 0;
 }
 
 .scroll-down img {
