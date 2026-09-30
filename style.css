@@ -282,6 +282,9 @@ html {
   .scroll-down img {
     height: 100px;
   }
+  .scroll-down {
+    margin-right: 15px;
+  }
 }
 .recruit {
   background-color: #1e1c1c;
